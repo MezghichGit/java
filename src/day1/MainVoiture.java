@@ -11,8 +11,10 @@ public class MainVoiture {
 		
 		
 		
-		Voiture v3 = new Voiture("BMW","Noir","25-07-2021",30000);
-		v3.detailsVoiture();
+		Voiture v3 = new Voiture("BMW",30000,"25-07-2021","Noir");
+		//v3.detailsVoiture();
+		System.out.println(v3.toString());
+		System.out.println(v3);
 		/*
 		//v3 = v2;
 		System.out.println("Couleur :" + v1.couleur + " Marque :" + v1.marque + " Prix : "+v1.prix +" Immat : "+v1.immat);

@@ -7,6 +7,11 @@ public class Voiture {
 	public String marque; // c'est attribut de type référence, la valeur par défaut des types références est null
 	public double prix; // la valeur par défaut est 0.0
 	public String immat;
+	
+	public String toString() {
+		return "Voiture [marque=" + marque + ", prix=" + prix + ", immat=" + immat + ", couleur=" + couleur + "]";
+	}
+
 	public String couleur;
 	
 	//Une voiture
@@ -25,7 +30,16 @@ public class Voiture {
 		System.out.println("Une nouvelle voiture créer avec marque!");
 		this.marque = marque;
 	}
+
+	public Voiture(String marque, double prix, String immat, String couleur) {
+		
+		this.marque = marque;
+		this.prix = prix;
+		this.immat = immat;
+		this.couleur = couleur;
+	}
 	
+	/*
 	public Voiture(String marque, String cl,String imt, double pr) //Constructeur avec paramètres
 	{
 		System.out.println("Une nouvelle voiture créer 4 paramètres!");
@@ -38,5 +52,5 @@ public class Voiture {
 	public void detailsVoiture()
 	{
 	System.out.println("Voiture [Marque : "+this.marque+" Couleur : "+this.couleur+" Immat : "+this.immat+" Prix :"+this.prix+"]");
-	}
+	}*/
 }
