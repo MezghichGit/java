@@ -10,7 +10,14 @@ public class Voiture {
 	
 	static int nombre; // attribut de la classe
 	
+	public static void getNbrVoitures()
+	{
+		System.out.println(nombre);
+	}
 	
+	static{
+		System.out.println("Bloc static de classe");
+	}
 	
 	//bloc d'initialisation d'instance : ce block s'exécute juste avant le constructeur
 	{
@@ -48,6 +55,7 @@ public class Voiture {
 
 	public Voiture(String marque, double prix, String immat, String couleur) {
 		
+		
 		this.marque = marque;
 		this.prix = prix;
 		this.immat = immat;
@@ -68,4 +76,10 @@ public class Voiture {
 	{
 	System.out.println("Voiture [Marque : "+this.marque+" Couleur : "+this.couleur+" Immat : "+this.immat+" Prix :"+this.prix+"]");
 	}*/
+	
+	
+	public void finalize()
+	{
+		System.out.println("Destruction de l'objet");
+	}
 }

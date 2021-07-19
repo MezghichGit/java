@@ -4,11 +4,14 @@ public class MainVoiture {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Voiture.nombre);
+		Voiture.getNbrVoitures();
+		//System.out.println(Voiture.nombre);
 		 Voiture v1 = new Voiture();
-		 System.out.println(Voiture.nombre);
+		 v1.getNbrVoitures();
+		// System.out.println(Voiture.nombre);
 		 Voiture v2 = new Voiture();
-		 System.out.println(Voiture.nombre);
+		/// System.out.println(Voiture.nombre);
+		 Voiture.getNbrVoitures(); //Invocation d'une méthode de classe (méthode static)
 		 
 		 
 		
