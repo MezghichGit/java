@@ -3,14 +3,16 @@ package day1;
 public class MainVoiture {
 
 	public static void main(String[] args) {
-		Voiture v1 = new Voiture();
 		
-		Voiture v2 = new Voiture("Rouge"); // on utilise le constructeur avec paramètre marque
-		System.out.println(v2.marque);
+		//Voiture v1 = new Voiture();
+		
+		//Voiture v2 = new Voiture("Rouge"); // on utilise le constructeur avec paramètre marque
+		//System.out.println(v2.marque);
 		
 		
 		
-		Voiture v3 = new Voiture();
+		Voiture v3 = new Voiture("BMW","Noir","25-07-2021",30000);
+		v3.detailsVoiture();
 		/*
 		//v3 = v2;
 		System.out.println("Couleur :" + v1.couleur + " Marque :" + v1.marque + " Prix : "+v1.prix +" Immat : "+v1.immat);

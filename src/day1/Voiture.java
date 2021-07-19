@@ -25,4 +25,18 @@ public class Voiture {
 		System.out.println("Une nouvelle voiture créer avec marque!");
 		this.marque = marque;
 	}
+	
+	public Voiture(String marque, String cl,String imt, double pr) //Constructeur avec paramètres
+	{
+		System.out.println("Une nouvelle voiture créer 4 paramètres!");
+		this.marque = marque;
+		this.couleur = cl;
+		this.immat = imt;
+		this.prix = pr;
+	}
+	
+	public void detailsVoiture()
+	{
+	System.out.println("Voiture [Marque : "+this.marque+" Couleur : "+this.couleur+" Immat : "+this.immat+" Prix :"+this.prix+"]");
+	}
 }
