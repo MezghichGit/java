@@ -9,9 +9,9 @@ public class MainVoiture {
 		System.out.println(v2.marque);
 		
 		
-		/*
-		Voiture v3 = new Voiture();
 		
+		Voiture v3 = new Voiture();
+		/*
 		//v3 = v2;
 		System.out.println("Couleur :" + v1.couleur + " Marque :" + v1.marque + " Prix : "+v1.prix +" Immat : "+v1.immat);
         v1.marque = "Peugeot 2008";
