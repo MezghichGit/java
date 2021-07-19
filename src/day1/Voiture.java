@@ -8,6 +8,20 @@ public class Voiture {
 	public double prix; // la valeur par défaut est 0.0
 	public String immat;
 	
+	static int nombre; // attribut de la classe
+	
+	
+	
+	//bloc d'initialisation d'instance : ce block s'exécute juste avant le constructeur
+	{
+		System.out.println("Je suis un blc 1 d'initialisation");
+	}
+	
+	{
+		System.out.println("Je suis un blc 2 d'initialisation");
+	}
+	
+	
 	public String toString() {
 		return "Voiture [marque=" + marque + ", prix=" + prix + ", immat=" + immat + ", couleur=" + couleur + "]";
 	}
@@ -22,6 +36,7 @@ public class Voiture {
 	
 	public Voiture() //Constructeur par défaut
 	{
+		nombre++;
 		System.out.println("Une nouvelle voiture créer!");
 	}
 	
